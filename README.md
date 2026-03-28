@@ -1,6 +1,6 @@
-# FakeStoreAPI Manual Testing Project
+# Fake Store API Manual Testing Project
 
-This repository contains manual API testing artifacts created while testing the FakeStoreAPI.
+This repository contains manual API testing artifacts created while testing the Fake Store API.
 
 API tested:
 https://fakestoreapi.com
@@ -14,8 +14,17 @@ Testing includes:
 
 Tools used:
 - Postman
+
+Testing approach:
 - Manual API testing
-- Markdown documentation
+
+---
+
+# Test Plan
+
+General testing approach is described in:
+
+[Test plan](./test_plan.md)
 
 ---
 
@@ -39,7 +48,7 @@ The Postman collection used during testing is available here:
 [Postman Collection](./FakeStoreAPI.postman_collection.json)
 
 It contains requests used during manual testing of the API endpoints. 
-The request names correspond to test IDs defined in the repository.
+The request names correspond to IDs used in the repository documentation.
 
 ---
 

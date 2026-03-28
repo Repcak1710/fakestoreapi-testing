@@ -5,7 +5,7 @@ Exploratory testing of product creation and validation behavior.
 
 ## Environment
 - Tool: Postman
-- API: FakeStoreAPI
+- API: Fake Store API
 - Base URL: https://fakestoreapi.com
 
 ---

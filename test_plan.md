@@ -1,18 +1,23 @@
-Objective:
-Verify functionality of FakeStoreAPI endpoints.
+# Test Plan
 
-Scope:
-- product endpoints
-- cart endpoints
+## Objective
+API under test:
+https://fakestoreapi.com
+
+Verify functionality of Fake Store API endpoints.
+
+## Scope:
+- products endpoints
+- carts endpoints
 - users endpoints
-- authentication
+- authentication endpoints
 
-Test types:
+## Test types:
 - functional testing
-- boundary testing
+- boundary value testing
 - negative testing
 - exploratory testing
 
-Tools:
+## Tools:
 - Postman
-- browser
+- Markdown documentation

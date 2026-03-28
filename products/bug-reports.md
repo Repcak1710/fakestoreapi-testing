@@ -1,7 +1,7 @@
 # Bug Reports – Products API
 
 Note:
-FakeStoreAPI simulates create, update and delete operations.
+Fake Store API simulates create, update and delete operations.
 This limitation may affect persistence-related scenarios, but it should not affect request validation or documented request schema requirements.
 
 <a name="bug01"></a>
