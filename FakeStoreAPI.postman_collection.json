@@ -1,0 +1,543 @@
+{
+  "info": {
+    "_postman_id": "f016143f-63f0-4634-8497-5276a5881c4f",
+    "name": "FakeStoreAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40122070"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "TestCases",
+          "item": [
+            {
+              "name": "TC-PROD-01",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-02",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/1",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-03",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/category/electronics",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "category",
+                    "electronics"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-04",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Test Product\",\r\n  \"price\": 19.99,\r\n  \"description\": \"Product created during API testing\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-05",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Updated Product\",\r\n  \"price\": 29.99,\r\n  \"description\": \"Updated during API testing\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/1",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-06",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/1",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-07",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/999999",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "999999"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-08",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/abc",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "abc"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-09",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"price\": 19.99,\r\n  \"description\": \"Missing title test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-10",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Negative price test\",\r\n  \"price\": -10,\r\n  \"description\": \"Invalid price value\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-11",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Invalid type test\",\r\n  \"price\": \"abc\",\r\n  \"description\": \"Price as string\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/1",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-12",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://fakestoreapi.com/products/abc",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products",
+                    "abc"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-13",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Huge price test\",\r\n  \"price\": 999999999999,\r\n  \"description\": \"Edge case price test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-14",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n  \"price\": 19.99,\r\n  \"description\": \"Very long title test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "TC-PROD-15",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"!@#$%^&*()<>?/{}[]|~`+=_-\",\r\n  \"price\": 19.99,\r\n  \"description\": \"Special characters test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "ExploratoryTests",
+          "item": [
+            {
+              "name": "ET-PROD-01",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ET-PROD-02",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Null price test\",\r\n  \"price\": null,\r\n  \"description\": \"Exploratory test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ET-PROD-03",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Null category test\",\r\n  \"price\": 19.99,\r\n  \"description\": \"Exploratory test\",\r\n  \"image\": \"https://i.pravatar.cc\",\r\n  \"category\": null\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ET-PROD-04",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"Array price test\",\r\n  \"price\": [19.99],\r\n  \"description\": \"Exploratory test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ET-PROD-05",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"title\": \"<script>alert('x')</script>\",\r\n  \"price\": 19.99,\r\n  \"description\": \"Exploratory test\",\r\n  \"category\": \"electronics\",\r\n  \"image\": \"https://i.pravatar.cc\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "https://fakestoreapi.com/products",
+                  "protocol": "https",
+                  "host": [
+                    "fakestoreapi",
+                    "com"
+                  ],
+                  "path": [
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Carts",
+      "item": []
+    },
+    {
+      "name": "Users",
+      "item": []
+    },
+    {
+      "name": "Auth",
+      "item": []
+    }
+  ]
+}

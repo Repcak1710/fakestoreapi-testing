@@ -4,6 +4,7 @@ Verify functionality of FakeStoreAPI endpoints.
 Scope:
 - product endpoints
 - cart endpoints
+- users endpoints
 - authentication
 
 Test types:
