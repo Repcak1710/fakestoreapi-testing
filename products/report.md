@@ -46,7 +46,9 @@ Result summary:
 | Failed | 4 |
 | Blocked | 0 |
 
-(Note: FakeStoreAPI simulates some operations, therefore some behaviors may differ from real production APIs.)
+(Note: Fake Store API simulates some operations, therefore some behaviors may differ from real production APIs.)
+
+Detailed results are available in: [Test Execution](./test_execution.md)
 
 ---
 
@@ -73,7 +75,7 @@ Bug reports created:
 - BUG-PROD-03 – Product can be created with negative price
 - BUG-PROD-04 – API accepts invalid data type for price
 
-(See [bug-reports.md](./bug-reports.md) for details.)
+See [Bug Reports](./bug-reports.md) for details.
 
 ---
 
@@ -88,14 +90,14 @@ Key observations:
 - API accepts incorrect data types
 - API does not sanitize HTML/JS input
 
-Details available in: [exploratory-testing.md](./exploratory-testing.md)
+Detailed results are available in: [Exploratory Testing](./exploratory-testing.md)
 
 
 ---
 
 # Limitations
 
-FakeStoreAPI simulates data persistence.  
+Fake Store API simulates data persistence.  
 Some operations (POST / PUT / DELETE) may not permanently modify server data.
 
 Because of this limitation:
